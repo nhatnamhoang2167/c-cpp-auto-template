@@ -5,6 +5,10 @@
   "publisher": "nhatnam7kz",
   "author": "Nhat Nam",
   "icon": "media/logo.png",
+  "repository": {
+  "type": "git",
+  "url": "https://github.com/nhatnamhoang2167/c-cpp-auto-template"
+},
   "license": "MIT",
   "version": "0.0.7",
   "engines": {
