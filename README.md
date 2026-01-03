@@ -34,4 +34,5 @@ int main() {
 
 ---
 🧠 **Note:** This is a personal project, fully generated with AI and refined by the author.
+⭐ If this extension saves you time, please consider leaving a 5-star review. It really helps!
 
