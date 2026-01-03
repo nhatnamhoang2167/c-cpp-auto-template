@@ -10,7 +10,7 @@
   "url": "https://github.com/nhatnamhoang2167/c-cpp-auto-template"
 },
   "license": "MIT",
-  "version": "0.0.7",
+  "version": "0.0.9",
   "engines": {
   "vscode": "^1.107.0"
   },
