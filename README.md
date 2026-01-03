@@ -31,3 +31,6 @@ int main() {
     return 0;
 }
 
+--------------------------------------------------------------------------------------------------
+🧠 **Note:** This is a personal project, fully generated with AI and refined by the author.
+
