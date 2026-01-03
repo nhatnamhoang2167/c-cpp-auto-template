@@ -1,5 +1,7 @@
 # C/C++ Auto Template
 
+![Demo](media/demo.gif)
+
 Automatically inserts a basic C/C++ template when you create/open an empty `.c` or `.cpp` file.
 
 ---
