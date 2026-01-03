@@ -30,7 +30,8 @@ Automatically inserts a basic C/C++ template when you create/open an empty `.c` 
 int main() {
     return 0;
 }
+```
 
---------------------------------------------------------------------------------------------------
+---
 🧠 **Note:** This is a personal project, fully generated with AI and refined by the author.
 
