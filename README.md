@@ -14,6 +14,22 @@ Automatically inserts a basic C/C++ template when you create/open an empty `.c` 
 
 ---
 
+## ⚙️ Custom Library Selection (NEW)
+
+You can choose which libraries to include directly from **VS Code Settings**.
+
+### How to configure
+
+1. Open **Settings** (`Ctrl + ,`)
+2. Search for: `C/C++ Auto Template`
+3. Select libraries for:
+   - **C Libraries**
+   - **C++ Libraries**
+   
+![Library Selection](media/library-selection.png)
+
+---
+
 ## 🚀 Usage
 
 1. Create a new empty file `main.c` or `main.cpp`
@@ -26,6 +42,7 @@ Automatically inserts a basic C/C++ template when you create/open an empty `.c` 
 ### `main.c`
 ```c
 #include <stdio.h>
+#include <math.h>
 
 int main() {
     return 0;

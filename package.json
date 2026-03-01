@@ -6,47 +6,71 @@
   "author": "Nhat Nam",
   "icon": "media/logo.png",
   "repository": {
-  "type": "git",
-  "url": "https://github.com/nhatnamhoang2167/c-cpp-auto-template"
-},
+    "type": "git",
+    "url": "https://github.com/nhatnamhoang2167/c-cpp-auto-template"
+  },
   "license": "MIT",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "engines": {
-  "vscode": "^1.107.0"
+    "vscode": "^1.107.0"
   },
   "categories": [
     "Other"
   ],
   "activationEvents": [
-  "onLanguage:c",
-  "onLanguage:cpp"
-],
-
+    "onLanguage:c",
+    "onLanguage:cpp"
+  ],
   "main": "./out/extension.js",
   "contributes": {
-    "commands": [
-      {
-        "command": "c-auto-template.helloWorld",
-        "title": "Hello World"
+    "configuration": {
+      "title": "C/C++ Auto Template",
+      "properties": {
+        "ccAutoTemplate.cppLibraries": {
+          "type": "array",
+          "description": "Select C++ libraries to include",
+          "items": {
+            "type": "string",
+            "enum": [
+              "iostream",
+              "vector",
+              "string",
+              "cmath",
+              "algorithm",
+              "map",
+              "set"
+            ]
+          },
+          "default": ["iostream"],
+          "uniqueItems": true
+        },
+        "ccAutoTemplate.cLibraries": {
+          "type": "array",
+          "description": "Select C libraries to include",
+          "items": {
+            "type": "string",
+            "enum": [
+              "stdio.h",
+              "stdlib.h",
+              "math.h",
+              "string.h",
+              "time.h"
+            ]
+          },
+          "default": ["stdio.h"],
+          "uniqueItems": true
+        }
       }
-    ]
+    }
   },
   "scripts": {
     "vscode:prepublish": "npm run compile",
     "compile": "tsc -p ./",
-    "watch": "tsc -watch -p ./",
-    "pretest": "npm run compile && npm run lint",
-    "lint": "eslint src",
-    "test": "vscode-test"
+    "watch": "tsc -watch -p ./"
   },
   "devDependencies": {
     "@types/vscode": "^1.107.0",
-    "@types/mocha": "^10.0.10",
     "@types/node": "22.x",
-    "typescript-eslint": "^8.48.1",
-    "eslint": "^9.39.1",
-    "typescript": "^5.9.3",
-    "@vscode/test-cli": "^0.0.12",
-    "@vscode/test-electron": "^2.5.2"
+    "typescript": "^5.9.3"
   }
 }
