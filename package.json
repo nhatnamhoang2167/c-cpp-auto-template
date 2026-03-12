@@ -1,7 +1,7 @@
 {
   "name": "c-auto-template",
   "displayName": "C/C++ Auto Template",
-  "description": "Automatically inserts a basic C/C++ template when you create/open an empty .c/.cpp file.",
+  "description": "Automatically inserts a C/C++ template when creating or opening an empty .c/.cpp file.",
   "publisher": "nhatnam7kz",
   "author": "Nhat Nam",
   "icon": "media/logo.png",
@@ -10,12 +10,12 @@
     "url": "https://github.com/nhatnamhoang2167/c-cpp-auto-template"
   },
   "license": "MIT",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "engines": {
     "vscode": "^1.107.0"
   },
   "categories": [
-    "Other"
+    "Programming Languages"
   ],
   "activationEvents": [
     "onLanguage:c",
@@ -26,9 +26,16 @@
     "configuration": {
       "title": "C/C++ Auto Template",
       "properties": {
+
+        "ccAutoTemplate.enableCPTemplate": {
+          "type": "boolean",
+          "default": false,
+          "description": "Enable Competitive Programming template (#include <bits/stdc++.h>). When enabled, custom C++ libraries will be ignored."
+        },
+
         "ccAutoTemplate.cppLibraries": {
           "type": "array",
-          "description": "Select C++ libraries to include",
+          "description": "Select C++ libraries to include in the template",
           "items": {
             "type": "string",
             "enum": [
@@ -41,12 +48,15 @@
               "set"
             ]
           },
-          "default": ["iostream"],
+          "default": [
+            "iostream"
+          ],
           "uniqueItems": true
         },
+
         "ccAutoTemplate.cLibraries": {
           "type": "array",
-          "description": "Select C libraries to include",
+          "description": "Select C libraries to include in the template",
           "items": {
             "type": "string",
             "enum": [
@@ -57,9 +67,12 @@
               "time.h"
             ]
           },
-          "default": ["stdio.h"],
+          "default": [
+            "stdio.h"
+          ],
           "uniqueItems": true
         }
+
       }
     }
   },
